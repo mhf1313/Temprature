@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5ecf4"
+    android:paddingRight="32dp"
+    android:paddingLeft="32dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Logo" />
+    <EditText
+        android:id="@+id/et_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColorHint="#c3c8ce"
+        android:textSize="14sp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/box"
+        android:layout_below="@+id/et_degree"
+        android:layout_marginTop="15dp">
+            <RadioButton
+                android:id="@+id/celsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To Celsius"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To Fahrenheit" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/box"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate"
+        android:layout_marginTop="15dp"
+        android:textColor="#d9dfeb"
+        android:background="@drawable/rounded_button"/>
+</RelativeLayout>
